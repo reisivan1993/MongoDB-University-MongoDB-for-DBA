@@ -1,0 +1,1 @@
+mongoimport --db db_name --collection collection_name

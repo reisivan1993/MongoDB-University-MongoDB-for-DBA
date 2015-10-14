@@ -1,6 +1,6 @@
 How to create mongoDB
 ---------------------
-1. Download MongoDB form A [link] (https://www.mongodb.org/downloads?_ga=1.31199997.315563070.1444726713#production)
+1. Download MongoDB form (https://www.mongodb.org/downloads?_ga=1.31199997.315563070.1444726713#production)
 2. Define in your global environment the root directory for mongoDB.
 3. open cmd.
 4. md /data
