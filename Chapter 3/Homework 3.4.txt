@@ -1,0 +1,12 @@
+HOMEWORK: HOMEWORK 3.4
+
+Which of the following are available in WiredTiger but not in MMAPv1? Check all that apply.
+
+
+1.Collection level locking
+2.Covered Queries
+3.Indexes
+4.Document level locking
+5.Data compression
+
+Answer: 4 & 5
