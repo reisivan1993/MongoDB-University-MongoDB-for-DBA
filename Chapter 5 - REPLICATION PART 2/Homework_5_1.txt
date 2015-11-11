@@ -1,0 +1,35 @@
+HOMEWORK: HOMEWORK 5.1
+
+Set up a replica set that includes an arbiter.
+
+To demonstrate that you have done this, what is the text in the "state" field for the arbiter when you run rs.status()?
+
+Answer : 7
+
+steps:
+1.
+mongod --dbpath "c://Users/rei.sivan/1" --replSet abc --port 27001
+mongod --dbpath "c://Users/rei.sivan/2" --replSet abc --port 27002
+mongod --dbpath "c://Users/rei.sivan/3" --replSet abc --port 27003
+
+2.
+run rs.initiate() in 27001
+
+3.
+rs.add("your_computer_name:27002")
+rs.add("your_computer_name:27003")
+
+4.
+var cfg - rs.conf()
+cfg.members[index of the mongod in the config].arbiterOnly = true
+
+5.
+remove one of them from the replSet
+rs.remove("your_computer_name:27003")
+
+6.
+then reconfig
+rs.reconfig(cfg)
+
+7.
+run rs.status() in 27003
