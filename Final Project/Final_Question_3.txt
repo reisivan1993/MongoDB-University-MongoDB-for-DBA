@@ -1,0 +1,13 @@
+Final: Question 3
+
+In question 2 the mongod on port 27003 does a rollback. Go to that mongod's data directory. Look for a rollback directory inside. Find the .bson file there. Run the bsondump utility on that file. What are its contents?
+
+
+1. There is no such file.
+2. It contains 2 documents.
+3. It contains 3 documents.
+4. It contains 4 documents.
+5. It contains 8 documents.
+6. The file exists but is 0 bytes long.
+
+Answer : 3
